@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SENTA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="auth-container">
+    <img src="assets/images/logo.png" alt="SENTA Logo" class="logo">
+    <h2>Hello!</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="password" placeholder="Enter your password" required>
+      <button type="submit" class="btn primary">Login</button>
+    </form>
+    <p class="auth-link">Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+  </div>
+
+  <!-- Firebase + Auth Scripts -->
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/auth.js"></script>
+
+  <script>
+    // Handle login form submission
+    const loginForm = document.getElementById("loginForm");
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      loginUser(email, password); // Call login function from auth.js
+    });
+  </script>
+</body>
+</html>

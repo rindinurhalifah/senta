@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - SENTA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="auth-container">
+    <img src="assets/images/logo.png" alt="SENTA Logo" class="logo">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="password" placeholder="Enter your password" required>
+      <input type="password" id="confirmPassword" placeholder="Re-enter your password" required>
+      <button type="submit" class="btn primary">Register now</button>
+    </form>
+    <p class="auth-link">Sudah punya akun? <a href="login.html">Login sekarang</a></p>
+  </div>
+
+  <!-- Firebase + Auth Scripts -->
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/auth.js"></script>
+
+  <script>
+    // Handle register form submission
+    const registerForm = document.getElementById("registerForm");
+    registerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+      } else {
+        registerUser(email, password); // Call register function from auth.js
+      }
+    });
+  </script>
+</body>
+</html>

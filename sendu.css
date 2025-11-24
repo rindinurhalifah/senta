@@ -1,0 +1,253 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  background-color: #f5f5f7;
+}
+
+.sendu-page {
+  max-width: 414px;        /* ukuran hp */
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 16px 16px 90px; /* space buat bottom nav */
+}
+
+/* HEADER */
+.sendu-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.sendu-logo {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ARENA CARD */
+.arena-section {
+  margin-bottom: 16px;
+}
+
+.arena-card {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff7ec;
+  border: 2px solid #d15123;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.arena-left {
+  margin-right: 10px;
+}
+
+.arena-badge {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.arena-right {
+  flex: 1;
+}
+
+.arena-title {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #b42018;
+}
+
+.arena-points {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.points-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* MODULE CARDS */
+.modules-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.module-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #ffe6e1;
+}
+
+.module-card.beginner {
+  background: #ffe6e1;
+}
+
+.module-card.intermediate {
+  background: #ffe3ff;
+}
+
+.module-card.advanced {
+  background: #ffe9ca;
+}
+
+.module-left {
+  margin-right: 10px;
+}
+
+.module-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.module-main {
+  max-width: 70%;
+}
+
+.module-title {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #b42018;
+}
+
+.module-sub {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6b6b6b;
+}
+
+.module-start {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #b42018;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* PRACTICE SECTION */
+.practice-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.practice-card {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #ffe0f2;
+  cursor: pointer;
+}
+
+.practice-card.weekly {
+  background: #ffebe0;
+}
+
+.practice-left {
+  margin-right: 10px;
+}
+
+.practice-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.practice-right {
+  flex: 1;
+}
+
+.practice-title {
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #b42018;
+}
+
+.practice-sub {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6b6b6b;
+}
+
+/* BOTTOM NAV (ICON ONLY) */
+.bottom-nav {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  max-width: 414px;
+  width: 100%;
+  background: #b42018;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 10px;
+  border-radius: 14px 14px 0 0;
+}
+
+.nav-item {
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-item img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+.nav-item.active img {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+.back-btn {
+  background-color: #ff7b3b;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

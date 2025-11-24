@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - SENTA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-page">
+    <!-- QUOTE -->
+    <section class="quote-box">
+      <p class="quote-text">
+        “Financial freedom is not about having more money, but about having control over your money.”
+        <span class="quote-author">- Morgan Housel, <i>Psychology of Money</i></span>
+      </p>
+    </section>
+
+    <!-- DAY STREAK SENDU -->
+    <section class="streak-card">
+      <div class="streak-header">
+        <div class="streak-count">
+          <img src="assets/images/countstreak.png" alt="Streak" class="streak-icon" />
+          <span id="streakNumber" class="streak-number">0</span>
+        </div>
+        <div class="streak-title">
+          <span class="streak-label">Day Streak Sendu</span>
+        </div>
+      </div>
+      <div class="streak-days">
+        <div class="day">
+          <img src="assets/images/diamond.png" alt="Mon" />
+          <span>Mon</span>
+        </div>
+        <div class="day">
+          <img src="assets/images/diamond.png" alt="Tue" />
+          <span>Tue</span>
+        </div>
+        <div class="day">
+          <img src="assets/images/diamond.png" alt="Wed" />
+          <span>Wed</span>
+        </div>
+        <div class="day">
+          <img src="assets/images/diamond.png" alt="Thu" />
+          <span>Thu</span>
+        </div>
+        <div class="day">
+          <img src="assets/images/diamond.png" alt="Fri" />
+          <span>Fri</span>
+        </div>
+        <div class="day">
+          <img src="assets/images/diamond.png" alt="Sat" />
+          <span>Sat</span>
+        </div>
+        <div class="day">
+          <img src="assets/images/diamond.png" alt="Sun" />
+          <span>Sun</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERBOARD -->
+    <section class="leaderboard-section">
+      <h2 class="leaderboard-title">LEADERBOARD</h2>
+      <div class="leaderboard-wrapper">
+        <!-- 2nd place -->
+        <div class="podium podium-2">
+          <div class="avatar-circle">
+            <img src="assets/images/profilepic.png" alt="User 2" />
+          </div>
+          <span class="user-name" id="user2Name">User 2</span>
+          <div class="podium-base silver">
+            <div class="score-row">
+              <img src="assets/images/star.png" alt="Star" class="star-icon" />
+              <span class="score" id="user2Score">7649</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1st place -->
+        <div class="podium podium-1">
+          <div class="avatar-circle">
+            <img src="assets/images/profilepic.png" alt="User 1" />
+          </div>
+          <span class="user-name" id="user1Name">User 1</span>
+          <div class="podium-base gold">
+            <div class="score-row">
+              <img src="assets/images/star.png" alt="Star" class="star-icon" />
+              <span class="score" id="user1Score">13118</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd place -->
+        <div class="podium podium-3">
+          <div class="avatar-circle">
+            <img src="assets/images/profilepic.png" alt="User 3" />
+          </div>
+          <span class="user-name" id="user3Name">User 3</span>
+          <div class="podium-base bronze">
+            <div class="score-row">
+              <img src="assets/images/star.png" alt="Star" class="star-icon" />
+              <span class="score" id="user3Score">6580</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI QUICK ACCESS -->
+    <section class="ai-section">
+      <h2 class="ai-title">AI QUICK ACCESS</h2>
+      <button id="aiQuickAccessBtn" class="ai-button">
+        <span>Ask anything</span>
+        <span class="ai-send-icon">
+          <span class="ai-send-circle"></span>
+          <span class="ai-send-arrow"></span>
+        </span>
+      </button>
+    </section>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="window.location.href='sendu.html'">
+        <img src="assets/images/sendu-nav.png" alt="Sendu" />
+        <span>Sendu</span>
+      </button>
+      <button class="nav-item" onclick="window.location.href='sentai.html'">
+        <img src="assets/images/sentai-nav.png" alt="SentAI" />
+        <span>SentAI</span>
+      </button>
+      <button class="nav-item active">
+        <img src="assets/images/dashboard.png" alt="Dashboard" />
+        <span>Dashboard</span>
+      </button>
+      <button class="nav-item" onclick="window.location.href='sentabung.html'">
+        <img src="assets/images/sentabung-nav.png" alt="SentaBung" />
+        <span>SentaBung</span>
+      </button>
+      <button class="nav-item" onclick="window.location.href='profile.html'">
+        <img src="assets/images/profile-nav.png" alt="Profile" />
+        <span>Profile</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Firebase + Dashboard Logic -->
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

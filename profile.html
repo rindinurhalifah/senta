@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile - SentAI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+  </header>
+    <!-- Back Button -->
+    <button class="back-btn" onclick="window.location.href='dashboard.html'">
+      <span class="arrow-left"></span>
+      Kembali ke Dashboard
+    </button>
+  <div class="profile-container">
+    <!-- Profile Section -->
+    <header class="profile-header">
+      <img src="assets/images/profilepic.png" alt="Profile Picture" class="profile-pic" />
+      <h2 class="user-name">Your Name</h2>
+      <p class="user-email">username@gmail.com</p>
+    </header>
+
+    <!-- General User Badge -->
+    <div class="user-status">
+      <span class="status">General User</span>
+    </div>
+
+    <!-- Ranking Box -->
+    <div class="ranking-box" onclick="window.location.href='badges.html'">
+      <div class="ranking-info">
+        <img src="assets/images/badges/beginner.png" alt="Beginner Badge" class="ranking-badge" />
+        <span class="ranking-text">Financial Beginner</span>
+      </div>
+      <div class="ranking-details">
+        <span>Arena 2 - Golden Cave</span>
+        <span>Points: 2773</span>
+      </div>
+    </div>
+
+    <!-- Account Actions -->
+    <div class="action-container">
+      <div class="action-box" onclick="window.location.href='bankaccount.html'">
+        <span>Link Account</span>
+      </div>
+      <div class="action-box" onclick="window.location.href='purchasehistory.html'">
+        <span>Purchase History</span>
+      </div>
+      <div class="action-box" onclick="window.location.href='settings.html'">
+        <span>Settings</span>
+      </div>
+      <div class="action-box" onclick="logout()">
+        <span>Logout</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>

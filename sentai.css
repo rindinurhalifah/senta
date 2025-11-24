@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+/* Additional styling for the back button */
+.back-btn {
+  background-color: #ff7b3b;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #b42018;
+}
+
+.arrow-left {
+  width: 12px;
+  height: 12px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(45deg);
+  margin-left: 2px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+}
+
+.sentai-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.sentai-logo {
+  width: 200px;
+  height: auto;
+}
+
+.sentai-text {
+  font-size: 1.2rem;
+  color: #b42018;
+  margin-top: 10px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.box {
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #ff7b3b;
+  color: #fff;
+}
+
+.box h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.charts-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.chart-left, .chart-right {
+  flex: 1;
+  text-align: center;
+}
+
+canvas {
+  margin: 0 auto;
+}
+
+@media (max-width: 150px) {
+  .charts-section {
+    flex-direction: column;
+  }
+
+ .chart-left img, .chart-right img {
+  max-width: 100%;  /* To make it responsive */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+}

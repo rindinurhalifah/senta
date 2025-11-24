@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sendu - Senta Financial Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/sendu.css" />
+</head>
+<body>
+  <div class="sendu-page">
+    <!-- HEADER -->
+    <header class="sendu-header">
+      <img src="assets/images/sendu.png" alt="Sendu Logo" class="sendu-logo" />
+    </header>
+
+    <!-- ARENA CARD -->
+    <section class="arena-section">
+      <div class="arena-card" id="arenaCard">
+        <div class="arena-left">
+          <img src="assets/images/badges/2goldencave.png" alt="Arena Badge" class="arena-badge" />
+        </div>
+        <div class="arena-right">
+          <p class="arena-title">FINANCIAL BEGINNER</p>
+          <div class="arena-points">
+            <img src="assets/images/star.png" alt="Star" class="star-icon" />
+            <span class="points-text">2773</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE CARDS (BEGINNER / INTERMEDIATE / ADVANCED) -->
+    <section class="modules-section">
+      <div class="module-card beginner" id="beginnerCard">
+        <div class="module-left">
+          <img src="assets/images/badges/beginner.png" alt="Beginner" class="module-icon" />
+        </div>
+        <div class="module-main">
+          <p class="module-title">BEGINNER</p>
+          <p class="module-sub">Basic saving skills & money mindset.</p>
+        </div>
+        <button class="module-start">Start!</button>
+      </div>
+
+      <div class="module-card intermediate" id="intermediateCard">
+        <div class="module-left">
+          <img src="assets/images/badges/intermediate.png" alt="Intermediate" class="module-icon" />
+        </div>
+        <div class="module-main">
+          <p class="module-title">INTERMEDIATE</p>
+          <p class="module-sub">Budgeting, cashflow & spending control.</p>
+        </div>
+        <button class="module-start">Start!</button>
+      </div>
+
+      <div class="module-card advanced" id="advancedCard">
+        <div class="module-left">
+          <img src="assets/images/badges/advanced.png" alt="Advanced" class="module-icon" />
+        </div>
+        <div class="module-main">
+          <p class="module-title">ADVANCED</p>
+          <p class="module-sub">Investing, risk, & long-term planning.</p>
+        </div>
+        <button class="module-start">Start!</button>
+      </div>
+    </section>
+
+    <!-- DAILY PRACTICE & WEEKLY REPORT -->
+    <section class="practice-section">
+      <div class="practice-card" id="dailyPracticeCard">
+        <div class="practice-left">
+          <img src="assets/images/dailypractice.png" alt="Daily Practice" class="practice-icon" />
+        </div>
+        <div class="practice-right">
+          <p class="practice-title">Daily Practice</p>
+          <p class="practice-sub">Latihan kecil setiap hari membuatmu semakin bijak dalam berfinansial!</p>
+        </div>
+      </div>
+
+      <div class="practice-card weekly" id="weeklyReportCard">
+        <div class="practice-left">
+          <img src="assets/images/wreport.png" alt="Weekly Report" class="practice-icon" />
+        </div>
+        <div class="practice-right">
+          <p class="practice-title">Weekly Report</p>
+          <p class="practice-sub">Cek produktivitas otak dan dompet mu minggu ini!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+ </header>
+    <!-- Back Button -->
+    <button class="back-btn" onclick="window.location.href='dashboard.html'">
+      <span class="arrow-left"></span>
+      Kembali ke Dashboard
+    </button>
+
+  <script src="js/sendu.js"></script>
+</body>
+</html>

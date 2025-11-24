@@ -1,0 +1,172 @@
+/* chatai.css */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+}
+
+.chatai-page {
+  max-width: 414px;           
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+/* ====================== */
+/*       HEADER           */
+/* ====================== */
+
+.sentai-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  height: 90px; 
+}
+
+/* Tombol back bulat */
+.back-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.back-btn:active {
+  transform: scale(0.92);
+}
+
+/* Panah kiri */
+.arrow-left {
+  width: 14px;
+  height: 14px;
+  border-left: 3px solid #b42018;
+  border-bottom: 3px solid #b42018;
+  transform: rotate(45deg);
+}
+
+/* Logo SentAI */
+.sentai-logo {
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ====================== */
+/*       CHAT AREA        */
+/* ====================== */
+
+.chat-area {
+  flex: 1;
+  padding: 8px 16px 80px;     
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.message.bot .bubble {
+  background: #f3f4f6;
+  color: #111827;
+  border-bottom-left-radius: 4px;
+}
+
+.message.user .bubble {
+  background: linear-gradient(90deg, #f54129, #7b1111);
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
+}
+
+/* ====================== */
+/*       INPUT BAR        */
+/* ====================== */
+
+.input-bar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  max-width: 414px;
+  width: 100%;
+  padding: 8px 12px 12px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+#chatInput {
+  flex: 1;
+  border-radius: 999px;
+  border: 1px solid #f97363;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+#chatInput::placeholder {
+  color: #9ca3af;
+}
+
+.send-btn {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* bulat kuning + panah merah */
+.send-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffc64b;
+  position: relative;
+}
+
+.send-arrow {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #b42018;
+  margin-left: -6px;
+}

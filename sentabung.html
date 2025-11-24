@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SentaBung - Auto Debit Savings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/sentabung.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="sentabung-header">
+    <img src="assets/images/sentabung.png" alt="Sentabung Logo" class="sentabung-logo" />
+
+    <!-- Points and Badge -->
+    <div class="point-badge-container">
+      <img src="assets/images/star.png" alt="Star" class="star-icon" />
+      <span class="points">2773</span>
+      <img src="assets/images/badges/beginner.png" alt="Beginner Badge" class="badge" />
+    </div>
+  </header>
+    <!-- Back Button -->
+    <button class="back-btn" onclick="window.location.href='dashboard.html'">
+      <span class="arrow-left"></span>
+      Kembali ke Dashboard
+    </button>
+    
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Container boxes -->
+    <div class="container-box left-container">
+      <div class="box" onclick="window.location.href='svgoals.html'">
+        <div class="box-title">Savings Progress</div>
+        <div class="box-icon">
+          <img src="assets/images/wallet.png" alt="Wallet Icon" />
+        </div>
+      </div>
+
+      <div class="box" onclick="window.location.href='svgoals.html'">
+        <div class="box-title">Saving Goals Settings</div>
+        <div class="box-icon">
+          <img src="assets/images/wallet.png" alt="Wallet Icon" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Auto Debit & History -->
+    <div class="container-box center-container">
+      <div class="box" onclick="window.location.href='ads.html'">
+        <div class="box-title">Auto Debit Settings</div>
+      </div>
+      
+      <div class="box" onclick="window.location.href='hds.html'">
+        <div class="box-title">History</div>
+      </div>
+    </div>
+
+    <!-- Upcoming Auto Debit -->
+    <div class="container-box right-container">
+      <div class="box">
+        <div class="box-title">Upcoming Auto Debit</div>
+        <div class="box-icon">
+          <img src="assets/images/calendar.png" alt="Calendar Icon" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Savings Categories -->
+  <div class="savings-categories">
+    <div class="category-box" onclick="window.location.href='sgedu.html'">
+      <img src="assets/images/sgedu.png" alt="Education Category" />
+      <p>Pendidikan</p>
+    </div>
+
+    <div class="category-box" onclick="window.location.href='sgumroh.html'">
+      <img src="assets/images/sgumroh.png" alt="Ibadah Category" />
+      <p>Ibadah</p>
+    </div>
+
+    <div class="category-box" onclick="window.location.href='sgshop.html'">
+      <img src="assets/images/sgshop.png" alt="Lifestyle Category" />
+      <p>Life Style</p>
+    </div>
+  </div>
+
+  <!-- News Section -->
+  <div class="news-section">
+    <div class="news-box">
+      <h3>News</h3>
+      <p>Berita seputar ekonomi hari ini</p>
+    </div>
+  </div>
+
+  <script src="js/sentabung.js"></script>
+</body>
+</html>
